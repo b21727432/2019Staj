@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="MenuController">
+
+    <button class="btn btn-primary" ng-click="getAllHotels()" >Show All Hotels</button>
+    <ul>
+        <li ng-repeat="x in hotels">{{x}}</li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>

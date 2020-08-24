@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>My Title</title>
+
+    <base href="/"/>
+
+    <link href="/3rd/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/app.css" rel="stylesheet"/>
+</head>
+<body ng-app="myApp">
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
+     ng-controller="MenuController">
+    <h5 class="my-0 mr-md-auto font-weight-normal hand" ng-click="goTo('/')">Ali Kayadibi</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" ng-click="goTo('/hotels')"
+           ng-class="{'active': selected == '/hotels'}">Insert Hotels</a>
+        <a class="p-2 text-dark" ng-click="goTo('/allHotels')"
+           ng-class="{'active': selected == '/allHotels'}">Show All Hotels</a>
+        <a class="p-2 text-dark" ng-click="goTo('/searchHotels')"
+           ng-class="{'active': selected == '/searchHotels'}">Search Hotels</a>
+        <a class="p-2 text-dark" ng-click="goTo('/singPage')"
+           ng-class="{'active': selected == '/singPage'}">Sign up</a>
+
+    </nav>
+
+</div>
+
+
+<div ng-view=""></div>
+
+
+<script src="/3rd/other/jquery-3.4.1.slim.min.js"></script>
+<script src="/3rd/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+<script src="/3rd/angular-1.7.8/angular.min.js"></script>
+<script src="/3rd/angular-1.7.8/angular-resource.min.js"></script>
+<script src="/3rd/angular-1.7.8/angular-route.min.js"></script>
+
+
+<script src="/app/my-app.module.js"></script>
+<script src="/app/my-module.module.js"></script>
+<script src="/app/my-component/my-component.component.js"></script>
+<br>
+</body>
+</html>

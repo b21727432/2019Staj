@@ -1,0 +1,12 @@
+.hand {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.active {
+    color: #007bff !important;
+}
